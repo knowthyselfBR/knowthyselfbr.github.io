@@ -25,3 +25,17 @@ body {
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+ }
+
+li {
+  text-decoration: none;
+}
