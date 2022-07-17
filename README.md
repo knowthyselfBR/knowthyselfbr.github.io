@@ -1,2 +1,2 @@
 # simple-portfolio-template
-simple portfolio template built with just HTML, CSS and JavaScript.
+simple portfolio template built with HTML and CSS from Bootstrap template.
