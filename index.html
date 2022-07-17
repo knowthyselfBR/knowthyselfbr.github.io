@@ -15,55 +15,76 @@
 </head>
 <body>
     <header>
-    
-        <div>
-            LOGO
-        </div>
-        <ul>
-            <li>
-                About
-            </li>
-            <li>
-                Projects
-            </li>
-            <li>
-                Skills
-            </li>
-            <li>
-                Contact
-            </li>
-        </ul>
-       
-
-        
+        <nav class="navbar is-transparent">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            <div class="navbar-brand">
+              <a class="navbar-item" href="">
+                <img src="">
+              </a>
+            </div>
+          
+            <div id="navbarExampleTransparentExample" class="navbar-menu">
+              <div class="navbar-end">
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">
+                    Sections
+                  </a>
+                  <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item">
+                      About Me
+                    </a>
+                    <a class="navbar-item">
+                      Projects
+                    </a>
+                    <a class="navbar-item">
+                      Skills
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>      
     </header>
     <main>
 
         <!--- ABOUT ME SECTION--->
-        <section>
-            <h1>Hi, I'm <span>Rafael (RD)</span></h1>
+        <section class="section has-text-centered">
 
+            <h1 class="title">About Me</h1>
+            <hr />
+            <h2>Hi, I'm Rafael <span class="has-text-weight-bold">(RD)</span></h2>
             <h2>Front-end Developer</h2>
 
         </section>
-        <!--- PROJECTS SECTION--->
-        <section>
 
-            <h2>Projects</h2>
+        </section>
+        <!--- PROJECTS SECTION--->
+        <section class="section has-text-centered">
+
+            <h2 class="title">Projects</h2>
+            <hr />
 
         </section>
         <!--- SKILLS SECTION--->
-        <section>
-            <h2>Skills</h2>
+        <section class="section has-text-centered">
+            <h2 class="title">Skills</h2>
+            <hr />
         </section>
-        <!--- CONTACT ME SECTION--->
-        <sections>
-            <h2>E-mail me</h2>
-        </sections>
 
     </main>
-    <footer>
-        Created By RD
+    <!--- CONTACT ME SECTION--->
+    <footer class="section has-text-right">
+        <p>Contact</p>
+        <p>Created By RD</p>
     </footer>
 
     <script href="script.js"></script>
