@@ -1,5 +1,4 @@
-# simple-portfolio-template
-simple portfolio template built with HTML and CSS from Bootstrap template.
+# simple-portfolio
 
 [See it Live.](https://knowthyselfbr.github.io/)
 
