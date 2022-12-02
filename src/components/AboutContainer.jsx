@@ -9,7 +9,7 @@ const AboutContainer = () => {
 
       </p>
       <p>
-        Besides the knowledge with the Tech below, I'm a blockchain development enthusiast and looking forward to work on projects in this niche in the future.
+        Besides the knowledge with the Tech below, I'm a blockchain enthusiast and looking forward to work on projects in this niche in the future.
       </p>
     </section>
   );
