@@ -5,10 +5,10 @@ import "../styles/components/socialnetworkcontainer.sass";
 const socialNetworks = [
   { name: "linkedin", 
     icon: <FaLinkedinIn />,
-    href: ""},
+    href: "https://www.linkedin.com/in/rafael-duarte-dv2022/"},
   { name: "github", 
     icon: <FaGithub />,
-    href: ""},
+    href: "https://github.com/knowthyselfBR"},
 ];
 
 const SocialNetworkContainer = () => {
