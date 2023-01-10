@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaMailBulk } from "react-icons/fa";
 
 import "../styles/components/socialnetworkcontainer.sass";
 
@@ -9,6 +9,9 @@ const socialNetworks = [
   { name: "github", 
     icon: <FaGithub />,
     href: "https://github.com/knowthyselfBR"},
+    { name: "mail", 
+    icon: <FaMailBulk />,
+    href: "mailto:rd.dev.2022@gmail.com"},
 ];
 
 const SocialNetworkContainer = () => {
