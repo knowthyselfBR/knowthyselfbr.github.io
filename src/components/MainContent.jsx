@@ -5,7 +5,7 @@ import "../styles/components/maincontent.sass";
 
 const MainContent = () => {
   return (
-    <main id="main-content">
+    <main id="main-content" className="container">
       <AboutContainer />
       <TechnologiesContainer />
     </main>

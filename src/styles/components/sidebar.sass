@@ -13,11 +13,16 @@
     padding: 3rem 0rem
 
     img
-        max-width: 40%
+        max-width: 50%
         max-height: 40%
         border-radius: variables.$container-border-radius
         position: relative
         margin-top: 0rem
+        align-content: center
+        box-shadow: 0 0 10px rgba(223, 221, 221,)
+
+        @media (max-width: 1000px)
+            display: none
 
     .title
         color: variables.$text-color-secondary
@@ -30,6 +35,9 @@
         @include mixins.btn
         position: relative
         margin-bottom: 3rem
+
+        @media (max-width: 1000px)
+            margin-bottom: 1rem
         
         &:after
             content: "See Projects"
