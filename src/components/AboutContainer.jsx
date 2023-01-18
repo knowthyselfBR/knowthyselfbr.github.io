@@ -1,8 +1,10 @@
+import "../styles/components/aboutcontainer.sass";
+
 const AboutContainer = () => {
   return (
     <section className="about-container container">
       <h2>About</h2>
-      <p>
+      <p class="h6">
         <p>
           I'm Rafael Duarte, web developer, currently in love with React apps.
   

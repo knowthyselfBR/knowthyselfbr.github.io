@@ -2,13 +2,14 @@
 @use '../mixins'
     
 .technologies-container
-    margin-bottom: 0.5rem
+    
 
     .technologies-grid
         display: flex
         flex-wrap: wrap
         gap: 2rem
         align-content: center
+        padding: 2em
 
     .technology-card
         @include mixins.center
@@ -17,15 +18,16 @@
         border: 1px solid #333
         min-width: 50px
         max-width: 175px
-        width: 40%
+        width: 70%
         border-radius: variables.$card-border-radius 
+        box-shadow: 0 0 5px rgba(223, 221, 221,)
 
         h3
             color: variables.$text-color
 
         svg
             font-size: 5rem
-            width: 50%
+            width: 70%
             max-height: 90px
             max-width: 60px
             min-height: 30px
