@@ -2,4 +2,4 @@
 
 [See it Live.](https://knowthyselfbr.github.io/)
 
-Developed using  Vite, React and Sass.
+Developed using  Vite, React, Bootstrap and Sass.
