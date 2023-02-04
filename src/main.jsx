@@ -6,7 +6,7 @@ import "./styles/main.sass";
 import * as bootstrap from 'bootstrap';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
 );

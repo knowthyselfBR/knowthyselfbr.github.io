@@ -1,6 +1,8 @@
 import SocialNetworkContainer from "./SocialNetworkContainer";
 import InformationContainer from "./InformationContainer";
 
+import { Link } from "react-router-dom";
+
 import Avatar from "../assets/images/me.png";
 
 import "../styles/components/sidebar.sass";
@@ -12,9 +14,7 @@ const Sidebar = () => {
       <p className="title">Developer</p>
       <SocialNetworkContainer />
       <InformationContainer />
-      <a href="#" className="btn" onsubmit="return false">
-      
-      </a>
+      <Link to="/" className="btn" onSubmit={() => {return false}} />
     </aside>
   );
 };

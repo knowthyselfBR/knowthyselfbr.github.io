@@ -1,27 +1,28 @@
+import { Link } from "react-router-dom";
 import "../styles/components/navbar.sass";
 
 const Navbar = () => {
     return (
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top navbar-custom">
-            <div class="container">
-                <a href="" class="navbar-brand">RD</a>
+        <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top navbar-custom">
+            <div className="container">
+                <Link to="/" className="navbar-brand">RD</Link>
 
                 <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navmenu"
                 >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a href="" class="nav-link disabled">Home</a>
+                <div className="collapse navbar-collapse" id="navmenu">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                    <Link to="/" className="nav-link">Home</Link>
                     </li>
-                    <li class="nav-item">
-                    <a href="" class="nav-link disabled">Projects</a>
+                    <li className="nav-item">
+                    <Link to="/projects" className="nav-link">Projects</Link>
                     </li>
                 </ul>
                 </div>
