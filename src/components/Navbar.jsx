@@ -1,33 +1,53 @@
-import { Link } from "react-router-dom";
-import "../styles/components/navbar.sass";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import NavbarDropdown from './sectionsComponents/NavbarDropdown';
 
-const Navbar = () => {
+function Navbar () {
+
+    const [theme, setTheme] = useState(null);
+
+        useEffect(() => {
+          if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+            setTheme('dark');
+          }else{
+            setTheme('light');
+          }
+        }, []);
+      
+        useEffect(() => {
+          if(theme === 'dark'){
+            document.documentElement.classList.add('dark');
+          }else{
+            document.documentElement.classList.remove('dark');
+          }
+        }, [theme])
+      
+        const handlerThemeSwitcher =() => {
+          setTheme(theme === 'dark' ? 'light' : 'dark');
+        };
+
     return (
-        <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top navbar-custom">
-            <div className="container">
-                <Link to="/" className="navbar-brand">RD</Link>
-
-                <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navmenu"
-                >
-                <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navmenu">
-                <ul className="navbar-nav ms-auto">
-                    <li className="nav-item">
-                    <Link to="/" className="nav-link">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link to="/projects" className="nav-link">Projects</Link>
-                    </li>
-                </ul>
-                </div>
-            </div>
+        <nav className='bg-slate-300 dark:bg-slate-800 p-2 flex justify-between'>
+            <ul className='flex justify-start gap-4 mr-4 ml-7'>
+                <li>
+                    <Link to="/"
+                    className='text-xl font-bold text-indigo-500 dark:text-indigo-500 hover:text-indigo-800 md:p-0 dark:hover:text-white'
+                    >
+                    Home
+                    </Link>
+                </li>
+                <li>
+                    <NavbarDropdown />
+                </li>
+            </ul>
+            <ul className='flex place-content-end mr-7'>
+                <li>
+                    <button type='button' onClick={handlerThemeSwitcher} className='bg-indigo-500 text-lg p-1 rounded-md'>
+                        {theme === 'dark' ? '🌛' : '🌞'}
+                    </button>
+                </li>
+            </ul>
         </nav>
-    )
-}
-export default Navbar
+    );
+};
+export default Navbar;

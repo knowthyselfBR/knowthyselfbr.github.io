@@ -1,20 +1,21 @@
-import "../styles/components/projects.sass";
+import React from "react";
+
 
 function Projects () {
     return (
-        <div id='portfolio'>
-            <div id="projects-container" className="card container-fluid p-5">
-                    <h2 className="bg-white text-wrap h2 text-center text-dark rounded-pill justify-content-center p-2 mw-100 mx-auto">
-                        <span className="m-1 ">Projects</span>
-                    </h2>
-                    <div className="card text-bg-dark mx-auto shadow-lg rounded m-5" style={{maxWidth: "18rem"}}>
-                        <div className="card-header mb-1">Header Example</div>
-                        <div className="card-body">
-                            <h5 className="card-title pb-1">Title Example</h5>
-                            <p className="card-text pt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus porro debitis odit deserunt voluptatem.</p>
-                            <span className="badge rounded-pill text-bg-light m-1">Tech 1</span>
-                            <span className="badge rounded-pill text-bg-light m-1">Tech n</span>
-
+        <div id='layout-container'className='font-mono bg-white dark:bg-slate-900 h-screen'>
+            <div id='layout-container-inside' className='max-w-5xl mx-auto w-11/12'>
+                <div className='flex items-center justify-center flex-col py-20'>
+                    <div className='text-center'>
+                        <h1 className='text-2xl md:text-4xl mb-3 md:mb-3 py-2 text-indigo-600 dark:text-indigo-500 font-semibold'>
+                            All Projects Page
+                        </h1>
+                        <p className='text-md md:text-xl max-w-md m-7 py-7 text-gray-600 dark:text-gray-300 text-center'>
+                            Coming Soon 
+                        </p> 
+                        <div className="grid place-content-center">
+                            <div className="w-12 h-12 rounded-full animate-spin items-center border-8 border-solid border-purple-500 border-t-transparent shadow-md" />
+                        </div>
                     </div>
                 </div>
             </div>

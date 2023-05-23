@@ -1,15 +1,18 @@
-import MainContent from "../components/MainContent";
-import Sidebar from "../components/Sidebar";
-import "../styles/components/app.sass";
-import Navbar from "../components/Navbar";
+import React from 'react';
+import HeroSection from '../components/HeroSection';
+import Skills from '../components/Skills';
+import ProjectsPageHome from '../components/ProjectsPageHome';
 
-function Home () {
+function Home() {
     return (
-          <div id='portfolio'>
-            <Sidebar />
-            <MainContent />
-          </div>
-    )
-}
+        <div id='layout-container' className='font-mono bg-white dark:bg-slate-900'>
+            <div id='layout-container-inside' className='max-w-5xl mx-auto w-11/12'>
+                <HeroSection />
+                <Skills />
+                <ProjectsPageHome />
+            </div>
+        </div>
+    );
+};
 
 export default Home;
