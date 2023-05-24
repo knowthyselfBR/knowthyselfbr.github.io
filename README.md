@@ -2,4 +2,4 @@
 
 [See it Live.](https://knowthyselfbr.github.io/)
 
-Developed using Vite, React, Tailwind.
+Developed using Vite, React, Typescript, Tailwind.
