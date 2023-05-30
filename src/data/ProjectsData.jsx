@@ -4,7 +4,7 @@ import ImageCountdown from '../assets/images/Countdown-Timer-Feature.jpg'
 import ImageLinktree from '../assets/images/link-tree-feature.jpg'
 import ImagePomo from '../assets/images/pomo.webp'
 import ImageCalc from '../assets/images/calc.jpg'
-import ImageGithub from '../assets/images/transfer.jpg'
+import ImageGithub from '../assets/images/github.jpg'
 
 const ProjectsData = [
     {
