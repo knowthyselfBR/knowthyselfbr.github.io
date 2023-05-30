@@ -4,6 +4,7 @@ import ImageCountdown from '../assets/images/Countdown-Timer-Feature.jpg'
 import ImageLinktree from '../assets/images/link-tree-feature.jpg'
 import ImagePomo from '../assets/images/pomo.webp'
 import ImageCalc from '../assets/images/calc.jpg'
+import ImageGithub from '../assets/images/transfer.jpg'
 
 const ProjectsData = [
     {
@@ -17,6 +18,12 @@ const ProjectsData = [
         imgUrl: ImageLinktree,
         tech: ['React JS','Tailwind'],
         githubUrl: 'projects/linktreeclone',
+    },
+    {
+        title: 'Api Github',
+        imgUrl: ImageGithub,
+        tech: ['React JS','Tailwind', 'API'],
+        githubUrl: 'projects/apigithub',
     },
     {
         title: 'Timer',
