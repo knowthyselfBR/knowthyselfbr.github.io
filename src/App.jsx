@@ -7,7 +7,8 @@ import Navbar from './components/Navbar';
 import HomeLinktreeClone from './pages/Projects/LinktreeClone/HomeLinktreeClone'
 import Timer from './pages/Projects/Timer/Timer';
 import Pomodoro from './pages/Projects/Pomodoro/Pomodoro';
-import Calculator from './pages/Projects/Calculator/Calculator'
+import Calculator from './pages/Projects/Calculator/Calculator';
+import ApiGitHubHome from './pages/Projects/ApiGitHub/ApiGitHubHome';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='projects/timer' element={<Timer />} />
             <Route path='projects/pomodoro' element={<Pomodoro />} />
             <Route path='projects/calculator' element={<Calculator />} />
+            <Route path='projects/apigithub' element={<ApiGitHubHome />} />
           <Route path='*' element={<NoPage />} />
         </Routes>
       </BrowserRouter>
