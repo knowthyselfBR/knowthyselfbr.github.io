@@ -106,8 +106,8 @@ export default function index() {
 	}, [seconds, pomodoro, shortBreak, longBreak, ticking]);
 
 	return (
-		<div className="bg-gradient-to-b from-slate-300 dark:from-slate-800 dark:to-slate-600 min-h-screen font-inter">
-			<div className="max-w-2xl min-h-screen mx-auto">
+		<div className="bg-gradient-to-b from-slate-300 dark:from-slate-800 dark:to-slate-600 font-inter h-full">
+			<div className="mx-auto">
 				<Navigation setOpenSetting={setOpenSetting} />
 				<Timer
 					stage={stage}

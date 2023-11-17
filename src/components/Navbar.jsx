@@ -27,26 +27,28 @@ function Navbar () {
         };
 
     return (
-        <nav className='bg-slate-300 dark:bg-slate-800 p-2 flex justify-between'>
-            <ul className='flex justify-start gap-4 mr-4 ml-7'>
-                <li>
-                    <Link to="/"
-                    className='text-xl font-bold text-indigo-500 dark:text-indigo-500 hover:text-indigo-800 md:p-0 dark:hover:text-white'
-                    >
-                    Home
-                    </Link>
-                </li>
-                <li>
-                    <NavbarDropdown />
-                </li>
-            </ul>
-            <ul className='flex place-content-end mr-7'>
+        <nav className='bg-slate-300 dark:bg-slate-800'>
+            <div className='p-3 flex justify-between'>
+                <ul className='flex justify-start gap-4 mr-4 ml-7'>
+                    <li>
+                        <Link to="/"
+                        className='text-xl font-bold text-indigo-500 dark:text-indigo-500 hover:text-indigo-800 md:p-0 dark:hover:text-white'
+                        >
+                        Home
+                        </Link>
+                    </li>
+                    <li>
+                        <NavbarDropdown />
+                    </li>
+                </ul>
+                <ul className='flex place-content-end mr-7'>
                 <li>
                     <button type='button' onClick={handlerThemeSwitcher} className='bg-indigo-500 text-lg p-1 rounded-md'>
                         {theme === 'dark' ? '🌛' : '🌞'}
                     </button>
                 </li>
             </ul>
+            </div>
         </nav>
     );
 };

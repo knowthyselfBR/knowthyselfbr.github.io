@@ -3,7 +3,7 @@ import React from "react";
 
 function Projects () {
     return (
-        <div id='layout-container'className='font-mono bg-white dark:bg-slate-900 h-screen'>
+        <div id='layout-container'className='font-mono bg-white dark:bg-slate-900 h-full'>
             <div id='layout-container-inside' className='max-w-5xl mx-auto w-11/12'>
                 <div className='flex items-center justify-center flex-col py-20'>
                     <div className='text-center'>

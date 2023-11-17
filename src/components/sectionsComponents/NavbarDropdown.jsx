@@ -30,9 +30,9 @@ function NavbarDropdown () {
             {isOpen && (
                 <div onClick={() => toggle(isOpen)} className='bg-purple-300 dark:bg-purple-800 absolute flex flex-col items-start rounded-lg' >
                 {ProjectsData.map((project, i) => (
-                    <div className='flex w-full justify-between p-4 hover:bg-purple-200 hover:dark:bg-purple-700 cursor-pointer rounded-lg border-l-transparent hover:border-l-white border-l-4' key={i}>
+                    <div className='flex w-full justify-between hover:bg-purple-200 hover:dark:bg-purple-700 cursor-pointer rounded-lg border-l-transparent hover:border-l-white border-l-4' key={i}>
                         <Link to={project.githubUrl} >
-                            <h3 className='font-bold'>{project.title}</h3>
+                            <h3 className='font-bold p-4'>{project.title}</h3>
                         </Link>
                     </div>
                 ))}

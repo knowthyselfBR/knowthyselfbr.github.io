@@ -23,7 +23,7 @@ function HomeLinktreeClone () {
     ]
 
     return (
-        <div id='layout-container'className='font-mono bg-gradient-to-b from-slate-300 dark:from-slate-800 dark:to-slate-600 grid place-items-center h-screen'>
+        <div id='layout-container'className='font-mono bg-gradient-to-b from-slate-300 dark:from-slate-800 dark:to-slate-600 grid place-items-center h-full'>
             <div id='layout-container-inside' className='container mx-auto w-11/12'>
                 <div className='flex items-center justify-center flex-col pb-20'>
                     <img src={profilePic} className='profile-pic object-center w-40 h-40 rounded-full' alt='Profile Picture' />
