@@ -6,7 +6,7 @@ function HomeLinktreeClone () {
 
     const links = [
         {
-            url: 'https://rddev0.github.io',
+            url: 'https://github.com/rddev0',
             title: 'Github',
             icon: <FaGithub />,
         },
